@@ -2,36 +2,31 @@
 export const routes = {
   jira:{
     dashBoard:'/dashBoard',
-    dealingSlip:'/dealingSlip',
-    startJourney:'/startJourney',
-    recharge:'/recharge',
-    withdraw:'/withdraw',
-    walletInfo:'/walletInfo',
-    invitation:'/invitation',
-    security:'/security',
-    contactUs:'/contactUs',
-    aboutUs:'/aboutUs',
-    faqs:'/faqs',
-    termAndCondition:'/term-and-condition',
-    register:'/auth/register',
-    login:'/auth/login',
-    forgetPassword:'/auth/forget-password'
+    preRegisterStudents:'/preRegisterStudents',
+    teachers:'/teachers',
+
+
+
+
+
+
+    // startJourney:'/startJourney',
+    // recharge:'/recharge',
+    // withdraw:'/withdraw',
+    // walletInfo:'/walletInfo',
+    // invitation:'/invitation',
+    // security:'/security',
+    // contactUs:'/contactUs',
+    // aboutUs:'/aboutUs',
+    // faqs:'/faqs',
+    // termAndCondition:'/term-and-condition',
+    // register:'/auth/register',
+    // login:'/auth/login',
+    // forgetPassword:'/auth/forget-password'
   
 
   },
-    moneyMutt: {
-    dashboard: "/dashboard",
-  },
-  // signIn: '/auth/signin',
-  landingPage: {
-    home: '/',
-    pricing: '/pricing',
-    company: '/company',
-    contactus: '/contactus',
-    feature: '/feature',
-    plan: '/feature/plan',
-    demoFeature: '/feature/demopage',
-  },
+ 
   vehicle :{
     dashboard:"/dashboard",
     newVehicle:'/dashboard/vehicle/viewVehicle',

@@ -31,7 +31,7 @@ export function SidebarMenu() {
   return (
     <div className="pb-20 custom-scrollbar">
 
-<div className="w-full py-3">
+{/* <div className="w-full py-3">
   <div className="flex items-start justify-around gap-2 overflow-x-auto px-2">
     {quickMenuItems?.map((item, index) => {
       const isActive = pathname === item.href;
@@ -67,7 +67,7 @@ export function SidebarMenu() {
       );
     })}
   </div>
-</div>
+</div> */}
 
 
 

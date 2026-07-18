@@ -13,10 +13,12 @@ import { FaUserPlus } from 'react-icons/fa';
 import { MdOutlineLockOpen } from 'react-icons/md';
 import { RxDashboard } from 'react-icons/rx';
 import { GiDeadEye } from "react-icons/gi";
-import { PiClipboardTextLight } from 'react-icons/pi';
+import { PiClipboardTextLight, PiStudent } from 'react-icons/pi';
 import { IoBookOutline, IoWalletOutline } from 'react-icons/io5';
 import { CgNotes } from "react-icons/cg";
 import { HiOutlineDocumentText } from 'react-icons/hi2';
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+
 
 
 
@@ -63,70 +65,35 @@ export const MenuItems: MenuItem[] = [
     type: "public"
   },
   {
-    icon: <BiBullseye />,
-    name: 'Dealing Slip',
-    href: routes.jira.dealingSlip,
-    resource: 'Dealing_Slip',
-    actions: 'Dealing_Slip.read',
+    icon: <PiStudent />,
+    name: 'Pre Register Students',
+    href: routes.jira.preRegisterStudents,
+    resource: 'Pre_Register_Students',
+    actions: 'Pre_Register_Students.read',
     type: "public"
   },
   {
-    icon: <GiDeadEye  />,
-    name: 'Start Journey',
-    href: routes.jira.startJourney,
-    resource: 'Start_Journey',
-    actions: 'Start_Journey.read',
+    icon: <LiaChalkboardTeacherSolid  />,
+    name: 'Teachers',
+    href: routes.jira.teachers,
+    resource: 'Teachers',
+    actions: 'Teachers.read',
     type: "public"
   },
-  {
-    icon: <RiHandCoinLine />,
-    name: 'Recharge',
-    href: routes.jira.recharge,
-    resource: 'Recharge',
-    actions: 'Recharge.read',
-    type: "public"
-  },
+ 
+ 
+  // {
+  //   icon: <RiHandCoinLine />,
+  //   name: 'Recharge',
+  //   href: routes.jira.recharge,
+  //   resource: 'Recharge',
+  //   actions: 'Recharge.read',
+  //   type: "public"
+  // },
 
-  {
-    icon: <FaUserPlus />,
-    name: 'Invitation',
-    href: routes.jira.invitation,
-    resource: 'Invitation',
-    actions: 'Invitation.read',
-    type: "public"
-  },
-  {
-    icon: <MdOutlineLockOpen  />,
-    name: 'Security',
-    href: routes.jira.security,
-    resource: 'Security',
-    actions: 'Security.read',
-    type: "public"
-  },
-  {
-  icon: <LuBadgeDollarSign  />,
-  name: 'Withdraw',
-  href: routes.jira.withdraw,
-  resource: 'Withdraw',
-  actions: 'Withdraw.read',
-  type: "public"
-},
-  {
-  icon: <IoWalletOutline  />,
-  name: 'Wallet Info',
-  href: routes.jira.walletInfo,
-  resource: 'WalletInfo',
-  actions: 'WalletInfo.read',
-  type: "public"
-},
-  {
-    icon: <LuPhone   />,
-    name: 'Contact Us',
-    href: routes.jira.contactUs,
-    resource: 'Contact_Us',
-    actions: 'Contact_Us.read',
-    type: "public"
-  },
+  
+  
+  
 
   // {
   //   icon: <LuBadgeDollarSign  />,
