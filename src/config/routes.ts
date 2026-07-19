@@ -4,6 +4,9 @@ export const routes = {
     dashBoard:'/dashBoard',
     preRegisterStudents:'/preRegisterStudents',
     teachers:'/teachers',
+    login:'/auth/login',
+    register:'/auth/register',
+    forgetPassword:'/auth/forget-password'
 
 
 
@@ -20,9 +23,6 @@ export const routes = {
     // aboutUs:'/aboutUs',
     // faqs:'/faqs',
     // termAndCondition:'/term-and-condition',
-    // register:'/auth/register',
-    // login:'/auth/login',
-    // forgetPassword:'/auth/forget-password'
   
 
   },
