@@ -383,7 +383,7 @@ console.log('payloadpayload', payload);
 
           <Button
             type="submit"
-            className="bg-blue-light text-dashBordCardsBG text-xs font-bold hover:!bg-pink-secondary sm:text-sm"
+            className="bg-blue-light text-dashBordCardsBG text-xs font-bold hover:!bg-blue-lighter sm:text-sm"
           >
             
             <span className='pe-1'> Register Now</span>  {loading && <SmallLoader/>} 

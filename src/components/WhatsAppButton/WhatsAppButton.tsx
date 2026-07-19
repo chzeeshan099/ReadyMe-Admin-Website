@@ -32,7 +32,7 @@ fetchContactNumber()
      <div>
     <Button
        onClick={() => openWhatsApp(number)}
-       className="bg-blue-light text-dashBordCardsBG text-xs font-bold hover:!bg-pink-secondary sm:text-sm flex items-center justify-center gap-2"
+       className="bg-blue-light text-dashBordCardsBG text-xs font-bold hover:!bg-blue-lighter sm:text-sm flex items-center justify-center gap-2"
     >
        WhatsApp <FaWhatsapp size={20}/>
     </Button>
