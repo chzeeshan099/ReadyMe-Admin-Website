@@ -26,9 +26,10 @@ export default function Header() {
   useEffect(()=>{
     getUser()
   },[])
+  console.log('userData_userData',userData);
 
   return (
-    <StickyHeader className="z-[990] border-b-2 border-pink-primary w-full  items-center justify-between bg-white backdrop-blur-md  py-3 -ml-[1px] pr-4">
+    <StickyHeader className="z-[990] border-b-2 border-blue-light w-full  items-center justify-between bg-white backdrop-blur-md  py-3 -ml-[1px] pr-4">
 
       <div className="flex relative items-center  gap-4 lg:max-w-2xl w-full">
        
@@ -50,7 +51,7 @@ export default function Header() {
 
       <div className="px-2  w-full py-2 mb-[1px] rounded-lg hidden md:flex">
         <p className="font-bold text-lg text-greenPrimary-100">
-          Hello , {userData?.userName}
+          Hello , {userData?.name}
         </p>
       </div>
 

@@ -23,33 +23,33 @@ import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 
 
-export const QuickMenuItems = [
-   {
-    icon: <CgNotes />,
-    name: 'T&C',
-    href: routes.jira.termAndCondition,
-    resource: 'T&C',
-    actions: 'T&C.read',
-    type: "public"
-  },
-   {
-    icon: <IoBookOutline />,
-    name: 'FAQs',
-    href: routes.jira.faqs,
-    resource: 'FAQs',
-    actions: 'FAQs.read',
-    type: "public"
-  },
-   {
-    icon: <HiOutlineDocumentText  />,
-    name: 'About Us',
-    href: routes.jira.aboutUs,
-    resource: 'About_US',
-    actions: 'About_US.read',
-    type: "public"
-  },
+// export const QuickMenuItems = [
+//    {
+//     icon: <CgNotes />,
+//     name: 'T&C',
+//     href: routes.jira.termAndCondition,
+//     resource: 'T&C',
+//     actions: 'T&C.read',
+//     type: "public"
+//   },
+//    {
+//     icon: <IoBookOutline />,
+//     name: 'FAQs',
+//     href: routes.jira.faqs,
+//     resource: 'FAQs',
+//     actions: 'FAQs.read',
+//     type: "public"
+//   },
+//    {
+//     icon: <HiOutlineDocumentText  />,
+//     name: 'About Us',
+//     href: routes.jira.aboutUs,
+//     resource: 'About_US',
+//     actions: 'About_US.read',
+//     type: "public"
+//   },
 
-];
+// ];
 
 
 

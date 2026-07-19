@@ -5,14 +5,14 @@ import { IoNotificationsOutline } from 'react-icons/io5';
 import { useRouter } from 'next/navigation';
 import { routes } from '@/config/routes';
 import { removeUserData } from '@/utils/localStorage';
-import { logOutUser } from '@/apis/authApi';
+import { logOutStaffApi } from '@/apis/authApi';
 import { toast } from 'react-toastify';
 
 export default function HeaderMenuRight() {
   const router = useRouter();
 
   const handleLogout = async() => {
-    const { data , error} = await logOutUser();
+    const { data , error} = await logOutStaffApi();
     if(error){
       toast.error(error)
       return

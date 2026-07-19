@@ -25,7 +25,25 @@ export const loginStaffApi = async (payloadData:any) =>{
 }
 
 
+export const logOutStaffApi = async () =>{
+  try {
+    
+    const res = await api.get(
+      `/api/staffUser/logoutStaff`,
+    );
+    console.log(res,'resresresres_logout')
+  
 
+    if(res?.data?.success){
+        return { data: res?.data , error: null };
+        }else{
+            return { data: null, error:res?.data?.message || "error try again." };
+        }
+  } catch (err) {
+    const error = err as AxiosError<{ message: string }>;
+        return { data: null, error: error.response?.data?.message ?? "error try again." };
+    }
+}
 
 
 
@@ -68,25 +86,7 @@ export const registerUserApi = async (payloadData:any) =>{
 
 
 
-export const logOutUser = async () =>{
-  try {
-    
-    const res = await api.get(
-      `/api/auth/logOutUser`,
-    );
-    console.log(res,'resresresres_logout')
-  
 
-    if(res?.data?.success){
-        return { data: res?.data , error: null };
-        }else{
-            return { data: null, error:res?.data?.message || "error try again." };
-        }
-  } catch (err) {
-    const error = err as AxiosError<{ message: string }>;
-        return { data: null, error: error.response?.data?.message ?? "error try again." };
-    }
-}
 
 
 export const updateMyPasswordApi = async (payload:any) =>{

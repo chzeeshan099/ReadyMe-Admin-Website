@@ -6,7 +6,7 @@ import SimpleBar from '@/components/ui/simplebar';
 import { SidebarMenu } from './sidebar-menu';
 import UpgradeSideBarCard from './UpgradeSideBarCard';
 import Image from 'next/image';
-import Logo from '@/components/airBnbImages/AirbnbLogo2.png';
+import Logo from '@/components/airBnbImages/readyMe logo.png';
 import { useSelector } from 'react-redux';
 import {
     useDrawer,
@@ -20,13 +20,14 @@ export default function Sidebar({ className }: { className?: string }) {
 
   return (
     <div>
-      <div className=" sticky top-0 z-40 w-full flex justify-between items-center border-b-2  border-pink-500  py-4 h-[50px] md:h-[71px] px-2 sm:px-6 2xl:px-8 2xl:pt-6">
+      <div className=" sticky top-0 z-40 w-full flex justify-between items-center border-b-2  border-blue-light  py-4 h-[50px] md:h-[71px] px-2 sm:px-6 2xl:px-8 2xl:pt-6">
         <Link
           href="/dashBoard"
           aria-label="Site Logo"
           className="flex items-center lg:justify-center justify-start"
         >
-          <Image src={Logo} alt="headerLogoError" className="xl:w-56 w-40 h-[80px] object-cover" />
+          {/* <Image src={Logo} alt="headerLogoError" className="w-[200px] h-[50px] object-cover " /> */}
+          <h1 className='text-blue-500 text-4xl'>ReadyMe</h1>
         </Link>
         <div onClick={() => closeDrawer()} className="xl:hidden block cursor-pointer">
           <RxCross2 className='w-8 h-8 text-yellow-500'  />

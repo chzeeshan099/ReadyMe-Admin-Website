@@ -20,7 +20,7 @@ export default function HydrogenLayout({
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

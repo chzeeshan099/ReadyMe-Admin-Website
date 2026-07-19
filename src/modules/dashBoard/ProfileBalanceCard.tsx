@@ -134,7 +134,7 @@ const ProfileBalanceCard = () => {
         <div className="flex-1">
           <div className="flex items-center gap-2">
             <h2 className="text-sm xl:text-2xl font-bold leading-none text-black">
-              {localUserData?.userName || userData?.userName}
+              {localUserData?.name || userData?.name}
             </h2>
           </div>
 
@@ -149,7 +149,7 @@ const ProfileBalanceCard = () => {
             <div className="flex items-center gap-1 sm:gap-3 -mt-1 xl:mt-0">
               <span className="">Invitation Code:</span>
               <span className="font-bold text-black">
-               {localUserData?.invitationCode || userData?.invitationCode}
+               {localUserData?.invitationCode || userData?.invitationCode || 'N/A'}
               </span>
 
               <button

@@ -4,7 +4,9 @@ import { usePathname } from 'next/navigation';
 import { Title, Collapse } from 'rizzui';
 import cn from '@/utils/class-names';
 import { PiCaretDownBold } from 'react-icons/pi';
-import { MenuItems, QuickMenuItems } from '@/layouts/hydrogen/menu-items';
+import { MenuItems,
+  //  QuickMenuItems
+   } from '@/layouts/hydrogen/menu-items';
 import StatusBadge from '@/components/others/get-status-badge';
 import { filterMenuItems } from '@/utils/MoneyMutt/func';
 
@@ -18,7 +20,7 @@ export function SidebarMenu() {
   const user: User = useSelector((state: RootState) => state?.user?.user);
   const permissions = user?.roleId?.permissions;
 
-  let quickMenuItems = QuickMenuItems;
+  // let quickMenuItems = QuickMenuItems;
   let menuItems: MenuItem[] = MenuItems;
 
   // if (permissions) {
@@ -92,7 +94,7 @@ export function SidebarMenu() {
                           className={cn(
                             'group relative mx-3 flex cursor-pointer items-center justify-between rounded-md px-3 py-3 font-medium lg:my-1 2xl:mx-5 2xl:my-2',
                             isDropdownOpen || isActive
-                              ? 'before:top-2/5 text-black before:absolute before:-start-3 before:block before:h-4/5 before:w-1 before:rounded-ee-md before:rounded-se-md before:bg-pink-500 2xl:before:-start-5'
+                              ? 'before:top-2/5 text-black before:absolute before:-start-3 before:block before:h-4/5 before:w-1 before:rounded-ee-md before:rounded-se-md before:bg-blue-light 2xl:before:-start-5'
                               : 'text-black transition-colors duration-200 hover:bg-pink-300'
                           )}
                         >
@@ -134,7 +136,7 @@ export function SidebarMenu() {
                               'mx-3.5 mb-0.5 flex items-center justify-between rounded-md px-3.5 py-2 font-medium capitalize last-of-type:mb-1 lg:last-of-type:mb-2 2xl:mx-5',
                               'pl-10', // Added more left padding for nesting effect
                               isChildActive
-                                ? 'bg-pink-500 text-black'
+                                ? 'bg-blue-light text-black'
                                 : 'text-black transition-colors duration-200 hover:bg-pink-300 hover:text-gray-900'
                             )}
                           >
@@ -166,8 +168,8 @@ export function SidebarMenu() {
                       className={cn(
                         'group relative mx-3 my-0.5 flex items-center justify-between rounded-md px-3 py-3 font-medium capitalize lg:my-1 2xl:mx-5 2xl:my-2',
                         isActive
-                          ? 'before:top-2/5 bg-pink-500 before:absolute before:-start-3 before:block before:h-4/5 before:w-1 before:rounded-ee-md before:rounded-se-md 2xl:before:-start-5'
-                          : 'text-black transition-colors duration-200 hover:bg-pink-300'
+                          ? 'before:top-2/5 bg-blue-light before:absolute before:-start-3 before:block before:h-4/5 before:w-1 before:rounded-ee-md before:rounded-se-md 2xl:before:-start-5'
+                          : 'text-black transition-colors duration-200 hover:bg-blue-lighter'
                       )}
                     >
                       <div className="flex items-center truncate">

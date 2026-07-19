@@ -168,21 +168,21 @@ useEffect(() => {
 
 
 
-useEffect(() => {
-  if (!user || !window.LiveChatWidget) return;
+// useEffect(() => {
+//   if (!user || !window.LiveChatWidget) return;
 
-  window.LiveChatWidget.on("ready", () => {
-    window.LiveChatWidget?.call("set_customer", {
-      name: user?.userName || "",
-      phone: user?.mobileNumber || "",
-    });
+//   window.LiveChatWidget.on("ready", () => {
+//     window.LiveChatWidget?.call("set_customer", {
+//       name: user?.userName || "",
+//       phone: user?.mobileNumber || "",
+//     });
 
-    // ✅ IMPORTANT: unique user id
-    window.LiveChatWidget?.call("set_session_variables", {
-      userId: user?._id || "",
-    });
-  });
-}, [user]);
+//     // ✅ IMPORTANT: unique user id
+//     window.LiveChatWidget?.call("set_session_variables", {
+//       userId: user?._id || "",
+//     });
+//   });
+// }, [user]);
   return (
     <>
     <div className='hidden xl:block'>
