@@ -65,13 +65,13 @@ const validateInternationalMobile = (value: string): true | string => {
 };
 
 export const registerSchema = z.object({
-  userName: z
+  name: z
   .string({
-    required_error: Messages.REQUIRED_FIELD('User Name'),
-    invalid_type_error: Messages.REQUIRED_FIELD('User Name'),
+    required_error: Messages.REQUIRED_FIELD('Name'),
+    invalid_type_error: Messages.REQUIRED_FIELD('Name'),
   })
   .trim()
-  .min(3, { message: Messages.MIN_LENGTH('User Name', 3) })
+  .min(3, { message: Messages.MIN_LENGTH('Name', 3) })
   .regex(/^[A-Za-z][A-Za-z0-9\s]*$/, {
       message:
         "Start with letter, letters & numbers only",

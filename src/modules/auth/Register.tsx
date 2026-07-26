@@ -43,7 +43,7 @@ const Register = () => {
   } = useForm<ProposalFormValues>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
-      userName: '',
+      name: '',
       mobileNumber: '',
       invitationCode: '',
       loginPassword:'',
@@ -93,7 +93,7 @@ console.log('payloadpayload', payload);
   
    toast.success(data.message);
    reset({
-    userName: '',
+    name: '',
     mobileNumber: '',
     invitationCode: '',
     loginPassword:'',
@@ -126,11 +126,10 @@ console.log('payloadpayload', payload);
         <input
   type={ 'text'}
   inputMode={'text' }
-  // {...register('userName')}
-  {...register('userName', {
+  {...register('name', {
   setValueAs: (value) => value.replace(/\s/g, '')
 })}
-  placeholder={'Enter Your User Name' }
+  placeholder={'Enter Your Name' }
    onKeyDown={(e) => {
     if (e.key === ' ') {
       e.preventDefault();
@@ -157,9 +156,9 @@ console.log('payloadpayload', payload);
     bg-transparent
   "
 />
-            {errors.userName && (
+            {errors.name && (
               <Text className="absolute -bottom-5 text-xs text-red-500">
-                {errors.userName.message}
+                {errors.name.message}
               </Text>
             )}
           </div>
